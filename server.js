@@ -2,7 +2,7 @@
 const express = require('express');
 const server = express();
 
-const PORT = 3050;
+const PORT =  process.env.PORT || 3050;
 
 server.listen(PORT, () => {
   console.log('listing to the Port number: ' + PORT);
